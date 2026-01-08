@@ -1,0 +1,55 @@
+{
+  "_manifest": {
+    "name": "MediaFusion [Express]",
+    "id": "org.syncler.providers.mediafusion.express",
+    "version": 1,
+    "description": "Express provider bridge for the MediaFusion Stremio Addon. Supports Movies & TV.",
+    "classPath": "org.syncler.providers.mediafusion.express",
+    "permaUrl": "https://raw.githubusercontent.com/YOUR_GITHUB_USER/YOUR_REPO/main/mediafusion.json",
+    "contact": "https://github.com/YOUR_GITHUB_USER",
+    "schemaVersion": "2.0"
+  },
+  "flags": {
+    "adult": false,
+    "anime": true,
+    "text_search": false
+  },
+  "providers": [
+    {
+      "name": "MediaFusion",
+      "base_url": "https://mediafusion.elfhosted.com",
+      "type": "express",
+      "response_type": "json",
+      "limit": 50,
+      "timeout": 20,
+      "movie": {
+        "query": "/stream/movie/{imdb_id}.json",
+        "keywords":
+      },
+      "tv": {
+        "query": "/stream/series/{imdb_id}:{season}:{episode}.json",
+        "keywords":
+      },
+      "parser": {
+        "root": "streams",
+        "fields": {
+          "title": "title",
+          "url": "url",
+          "quality": {
+            "source": "name",
+            "regex": "(?i)(4k|2160p|1080p|720p|480p|scr|cam)"
+          },
+          "size": {
+            "source": "title",
+            "regex": "(?i)(\\d+(?:\\.\\d+)?\\s?(?:GB|MB))"
+          },
+          "seeds": {
+             "source": "title",
+             "regex": "👤\\s?(\\d+)"
+          },
+          "infohash": "infoHash"
+        }
+      }
+    }
+  ]
+}

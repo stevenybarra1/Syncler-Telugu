@@ -1,0 +1,7 @@
+{
+  "name": "Stremio Bridge Vendors",
+  "id": "org.syncler.vendors.stremiobridge",
+  "version": 1,
+  "description": "A collection of providers bridging Stremio addons to Syncler.",
+  "packages":
+}

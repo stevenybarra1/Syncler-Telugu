@@ -1,9 +1,0 @@
-"_manifest": {
-    "name": "MediaFusion [Express]",
-    "id": "org.syncler.providers.mediafusion",
-    "version": 1,
-    "classPath": "org.syncler.providers.mediafusion",
-    "permaUrl": "https://raw.githubusercontent.com/username/repo/main/mediafusion.json",
-    "contact": "support@example.com",
-    "schemaVersion": "2.0"
-}

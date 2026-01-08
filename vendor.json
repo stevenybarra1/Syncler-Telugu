@@ -3,5 +3,5 @@
   "id": "org.syncler.vendors.stremiobridge",
   "version": 1,
   "description": "A collection of providers bridging Stremio addons to Syncler.",
-  "packages":
+  "packages": "https://raw.githubusercontent.com/stevenybarra1/Syncler-Telugu/refs/heads/main/mediafusion.json"
 }

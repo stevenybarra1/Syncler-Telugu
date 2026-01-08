@@ -5,8 +5,8 @@
     "version": 1,
     "description": "Express provider bridge for the MediaFusion Stremio Addon. Supports Movies & TV.",
     "classPath": "org.syncler.providers.mediafusion.express",
-    "permaUrl": "https://raw.githubusercontent.com/YOUR_GITHUB_USER/YOUR_REPO/main/mediafusion.json",
-    "contact": "https://github.com/YOUR_GITHUB_USER",
+    "permaUrl": "https://raw.githubusercontent.com/stevenybarra1/Syncler-Telugu/main/mediafusion.json",
+    "contact": "https://github.com/stevenybarra1",
     "schemaVersion": "2.0"
   },
   "flags": {
